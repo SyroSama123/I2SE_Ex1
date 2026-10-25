@@ -1,9 +1,11 @@
+
 public class Main {
 
     public static void main(String[] args) {
         String nrrdPath = "Datasets/MRHead_1.nrrd";
         String csvPath = "Datasets/planes.csv";
         String outputDirectory = "Datasets/projections";
+        String videoPath = "Datasets/projections.mp4";
 
         try (NRRDVolumeReader volume =
                      new NRRDVolumeReader(nrrdPath)) {
@@ -12,12 +14,6 @@ public class Main {
             System.out.println("Width: " + volume.getWidth());
             System.out.println("Height: " + volume.getHeight());
             System.out.println("Depth: " + volume.getDepth());
-            System.out.println("Bits per pixel: "
-                    + volume.getBitsPerPixel());
-            System.out.println("Pixel type: "
-                    + volume.getPixelType());
-            System.out.println("Little endian: "
-                    + volume.isLittleEndian());
 
             PlaneProjector.projectCsv(
                     volume,
@@ -25,11 +21,29 @@ public class Main {
                     outputDirectory
             );
 
-            System.out.println(
-                    "All plane projections completed successfully.");
+            System.out.println("PNG projections completed.");
 
         } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
+            System.err.println(
+                    "Error generating projections: " + e.getMessage()
+            );
+            e.printStackTrace();
+            return;
+        }
+
+        try {
+            Mp4VideoCreator.createVideo(
+                    outputDirectory,
+                    videoPath,
+                    2
+            );
+
+            System.out.println("Video creation completed.");
+
+        } catch (Exception e) {
+            System.err.println(
+                    "Error creating MP4: " + e.getMessage()
+            );
             e.printStackTrace();
         }
     }

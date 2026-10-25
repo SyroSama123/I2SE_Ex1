@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Created the repository and added NRRDVolumeReader.java class.">
-      <change afterPath="$PROJECT_DIR$/Datasets/planes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PlaneProjector.java" afterDir="false" />
+    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Added PlaneProjector.java class.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mp4VideoCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
@@ -92,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1792925172805</updated>
       <workItem from="1792925173947" duration="4124000" />
-      <workItem from="1792929365614" duration="1235000" />
+      <workItem from="1792929365614" duration="2084000" />
     </task>
     <task id="LOCAL-00001" summary="Created the repository and added NRRDVolumeReader.java class.">
       <option name="closed" value="true" />
@@ -102,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792930247870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added PlaneProjector.java class.">
+      <option name="closed" value="true" />
+      <created>1792930771943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792930771943</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the repository and added NRRDVolumeReader.java class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the repository and added NRRDVolumeReader.java class." />
+    <MESSAGE value="Added PlaneProjector.java class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PlaneProjector.java class." />
   </component>
 </project>
