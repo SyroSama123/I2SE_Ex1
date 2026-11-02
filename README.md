@@ -102,7 +102,7 @@ The volume represents a 3D raster with dimensions:
 Each dimension must satisfy:
 
 ```text
-1 <= dimension < 1024
+0 <= dimension <= 1024
 ```
 
 Supported voxel data types depend on the NRRD reader implementation and the input file's encoding.

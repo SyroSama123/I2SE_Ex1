@@ -16,6 +16,9 @@ public class PlaneProjector {
 
     private static final double ISOSCELES_EPSILON = 0.001;
     private static final double GEOMETRY_EPSILON = 1e-12;
+    private static final double MIN_COORDINATE = 0.0;
+    private static final double MAX_COORDINATE = 1024.0;
+
     private static final int ERROR_IMAGE_WIDTH = 512;
     private static final int ERROR_IMAGE_HEIGHT = 512;
 
@@ -66,6 +69,23 @@ public class PlaneProjector {
     private record Projection(double[][] values, boolean[][] mask) {}
 
     /*
+     * Validate an individual coordinate.
+     * Both 0 and 1024 are valid values.
+     */
+    private static void validateCoordinate(double coordinate)
+            throws IOException {
+
+        if (!Double.isFinite(coordinate)
+                || coordinate < MIN_COORDINATE
+                || coordinate > MAX_COORDINATE) {
+
+            throw new IOException(
+                    "Coordinate must be between 0 and 1024 inclusive: "
+                            + coordinate);
+        }
+    }
+
+    /*
      * Accepted CSV formats:
      *
      * Triangle:
@@ -98,12 +118,9 @@ public class PlaneProjector {
                 double y = Double.parseDouble(fields[i + 1].trim());
                 double z = Double.parseDouble(fields[i + 2].trim());
 
-                if (!Double.isFinite(x)
-                        || !Double.isFinite(y)
-                        || !Double.isFinite(z)) {
-                    throw new IOException(
-                            "Coordinates must be finite numbers: " + line);
-                }
+                validateCoordinate(x);
+                validateCoordinate(y);
+                validateCoordinate(z);
 
                 points.add(new Point3(x, y, z));
             }
@@ -126,20 +143,19 @@ public class PlaneProjector {
                     double y = Double.parseDouble(y4);
                     double z = Double.parseDouble(z4);
 
-                    if (!Double.isFinite(x)
-                            || !Double.isFinite(y)
-                            || !Double.isFinite(z)) {
-                        throw new IOException(
-                                "Coordinates must be finite numbers: " + line);
-                    }
+                    validateCoordinate(x);
+                    validateCoordinate(y);
+                    validateCoordinate(z);
 
                     points.add(new Point3(x, y, z));
+
                 } else if (!allEmpty) {
                     throw new IOException(
                             "The fourth vertex must have all 3 coordinates "
                                     + "or all 3 fields must be empty: " + line);
                 }
             }
+
         } catch (NumberFormatException e) {
             throw new IOException("Invalid coordinate: " + line, e);
         }
