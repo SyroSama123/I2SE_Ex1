@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Fixed the rectangular frames issue. &#10;Made sure that it generates an error frame for each invalid plane given. &#10;Cleaned up the repository a bit.">
-      <change afterPath="$PROJECT_DIR$/Testing_Strategy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Mp4VideoCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/NRRDVolumeReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PlaneProjectorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestVolumeHelper.java" afterDir="false" />
+    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Deleted invalid csv file.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/MRHead_1.nrrd" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/MRHead_1.nrrd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/head.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/head.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/horizontal_middle_planes_400.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/horizontal_middle_planes_400.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/isosceles_triangles_3d.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/isosceles_triangles_3d.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/planes_400.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/planes_400.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/planes_400_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/planes_400_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datasets/Plane CSVs/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Datasets/Plane_CSVs/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NRRDVolumeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NRRDVolumeReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +160,7 @@
       <workItem from="1792929365614" duration="4264000" />
       <workItem from="1793022170201" duration="1518000" />
       <workItem from="1793024047371" duration="627000" />
-      <workItem from="1793615379595" duration="5673000" />
+      <workItem from="1793615379595" duration="6183000" />
     </task>
     <task id="LOCAL-00001" summary="Created the repository and added NRRDVolumeReader.java class.">
       <option name="closed" value="true" />
@@ -217,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793617630948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added a testing suite including 16 test methods and 21 test invocations, including parameterized tests.&#10;&#10;Added Testing_Strategy.md which is an explanation of the testing strategy in this project.">
+      <option name="closed" value="true" />
+      <created>1793621167334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793621167334</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Deleted invalid csv file.">
+      <option name="closed" value="true" />
+      <created>1793621271812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793621271812</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +230,8 @@
     <MESSAGE value="Added Mp4VideoCreator.java class." />
     <MESSAGE value="Optimized all files such that it runs at around 99 fps. &#10;&#10;All frames come out rectangular. Needs fix." />
     <MESSAGE value="Fixed the rectangular frames issue. &#10;Made sure that it generates an error frame for each invalid plane given. &#10;Cleaned up the repository a bit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the rectangular frames issue. &#10;Made sure that it generates an error frame for each invalid plane given. &#10;Cleaned up the repository a bit." />
+    <MESSAGE value="Added a testing suite including 16 test methods and 21 test invocations, including parameterized tests.&#10;&#10;Added Testing_Strategy.md which is an explanation of the testing strategy in this project." />
+    <MESSAGE value="Deleted invalid csv file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted invalid csv file." />
   </component>
 </project>
