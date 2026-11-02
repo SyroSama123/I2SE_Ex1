@@ -1,4 +1,3 @@
-
 import loci.formats.FormatException;
 
 import java.io.IOException;
@@ -11,12 +10,25 @@ public class Main {
     private static final int FRAMES_PER_SECOND = 50;
 
     public static void main(String[] args) {
-        if (args.length != 3) {
+        int exitCode = runApp(args);
+        if (exitCode != 0) {
+            System.exit(exitCode);
+        }
+    }
+
+    /**
+     * Executes the main processing workflow for the volume plane-projection application.
+     * Returning an exit status code allows for safe and direct unit testing without terminating the JVM.
+     *
+     * @param args Command line arguments: <input.nrrd> <planes.csv> <output.mp4>
+     * @return 0 on success, 1 on failure
+     */
+    public static int runApp(String[] args) {
+        if (args == null || args.length != 3) {
             System.err.println(
                     "Usage: java -jar I2SE_Ex1.jar " +
                             "<input.nrrd> <planes.csv> <output.mp4>");
-            System.exit(1);
-            return;
+            return 1;
         }
 
         Path nrrdPath = Paths.get(args[0]).toAbsolutePath();
@@ -72,22 +84,23 @@ public class Main {
 
             System.out.println(
                     "Video created successfully: " + videoPath);
+            return 0;
 
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             System.err.println("Operation interrupted.");
             e.printStackTrace();
-            System.exit(1);
+            return 1;
 
         } catch (FormatException | IOException e) {
             System.err.println("Error: " + e.getMessage());
             e.printStackTrace();
-            System.exit(1);
+            return 1;
 
         } catch (Exception e) {
             System.err.println("Unexpected error: " + e.getMessage());
             e.printStackTrace();
-            System.exit(1);
+            return 1;
         }
     }
 
