@@ -1,3 +1,4 @@
+
 import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.awt.Font;
@@ -68,10 +69,6 @@ public class PlaneProjector {
 
     private record Projection(double[][] values, boolean[][] mask) {}
 
-    /*
-     * Validate an individual coordinate.
-     * Both 0 and 1024 are valid values.
-     */
     private static void validateCoordinate(double coordinate)
             throws IOException {
 
@@ -85,20 +82,6 @@ public class PlaneProjector {
         }
     }
 
-    /*
-     * Accepted CSV formats:
-     *
-     * Triangle:
-     * x1,y1,z1,x2,y2,z2,x3,y3,z3
-     *
-     * Quadrilateral:
-     * x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
-     *
-     * An empty fourth vertex is also permitted:
-     * x1,y1,z1,x2,y2,z2,x3,y3,z3,,,
-     *
-     * Empty lines and lines starting with # are ignored.
-     */
     private static List<Point3> readVertices(String line)
             throws IOException {
 
@@ -200,7 +183,6 @@ public class PlaneProjector {
         }
 
         if (vertices.size() == 3) {
-            // A triangle is isosceles if any two sides are equal.
             if (!approximatelyEqual(ab, bc)
                     && !approximatelyEqual(bc, ca)
                     && !approximatelyEqual(ca, ab)) {
@@ -226,7 +208,6 @@ public class PlaneProjector {
                     "Quadrilateral contains coincident vertices.");
         }
 
-        // Verify that all four vertices lie in the same plane.
         Point3 normal = cross.normalize();
         double distanceFromPlane = Math.abs(d.subtract(a).dot(normal));
 
@@ -235,11 +216,6 @@ public class PlaneProjector {
                     "Quadrilateral vertices are not coplanar.");
         }
 
-        /*
-         * Vertices must be ordered around the perimeter: A, B, C, D.
-         * An isosceles trapezoid has one pair of parallel opposite sides
-         * and equal-length legs.
-         */
         boolean basesAB_CD = areParallel(
                 b.subtract(a), d.subtract(c));
 
@@ -270,7 +246,6 @@ public class PlaneProjector {
             return false;
         }
 
-        // Relative cross-product magnitude measures angular deviation.
         return a.cross(b).length() / (lengthA * lengthB)
                 <= ISOSCELES_EPSILON;
     }
@@ -288,12 +263,88 @@ public class PlaneProjector {
         boolean quadrilateral = vertices.size() == 4;
         Point3 d = quadrilateral ? vertices.get(3) : null;
 
-        // Build a local 2D coordinate system in the plane.
-        Point3 u = b.subtract(a).normalize();
         Point3 normal = b.subtract(a)
                 .cross(c.subtract(a))
                 .normalize();
+
+        Point3 baseStart;
+        Point3 baseEnd;
+        Point3 oppositeMidpoint;
+
+        if (!quadrilateral) {
+            /*
+             * Find the triangle's base opposite its apex.
+             * The base is the side not belonging to the equal sides.
+             */
+            double ab = distance(a, b);
+            double bc = distance(b, c);
+            double ca = distance(c, a);
+
+            if (approximatelyEqual(ab, ca)) {
+                // Equal sides AB and AC; base BC; apex A.
+                baseStart = b;
+                baseEnd = c;
+                oppositeMidpoint = a;
+            } else if (approximatelyEqual(ab, bc)) {
+                // Equal sides AB and BC; base AC; apex B.
+                baseStart = a;
+                baseEnd = c;
+                oppositeMidpoint = b;
+            } else {
+                // Equal sides BC and CA; base AB; apex C.
+                baseStart = a;
+                baseEnd = b;
+                oppositeMidpoint = c;
+            }
+
+        } else {
+            /*
+             * Identify the parallel sides and choose the longer base.
+             * Vertices must be ordered around the perimeter: A, B, C, D.
+             */
+            boolean basesAB_CD = areParallel(
+                    b.subtract(a), d.subtract(c));
+
+            if (basesAB_CD) {
+                if (distance(a, b) >= distance(c, d)) {
+                    // AB is the longer base.
+                    baseStart = a;
+                    baseEnd = b;
+                    oppositeMidpoint = c.add(d).scale(0.5);
+                } else {
+                    // CD is the longer base.
+                    baseStart = c;
+                    baseEnd = d;
+                    oppositeMidpoint = a.add(b).scale(0.5);
+                }
+            } else {
+                if (distance(b, c) >= distance(d, a)) {
+                    // BC is the longer base.
+                    baseStart = b;
+                    baseEnd = c;
+                    oppositeMidpoint = d.add(a).scale(0.5);
+                } else {
+                    // DA is the longer base.
+                    baseStart = d;
+                    baseEnd = a;
+                    oppositeMidpoint = b.add(c).scale(0.5);
+                }
+            }
+        }
+
+        /*
+         * Build a local 2D coordinate system.
+         * u follows the selected base.
+         * v is flipped when necessary so the apex/other base is above it.
+         */
+        Point3 u = baseEnd.subtract(baseStart).normalize();
         Point3 v = normal.cross(u).normalize();
+
+        Point3 baseMidpoint = baseStart.add(baseEnd).scale(0.5);
+
+        if (oppositeMidpoint.subtract(baseMidpoint).dot(v) < 0) {
+            v = v.scale(-1);
+        }
 
         List<Point2> projected = new ArrayList<>();
 
@@ -303,7 +354,7 @@ public class PlaneProjector {
         double maxY = Double.NEGATIVE_INFINITY;
 
         for (Point3 p : vertices) {
-            Point3 relative = p.subtract(a);
+            Point3 relative = p.subtract(baseStart);
 
             double x = relative.dot(u);
             double y = relative.dot(v);
@@ -470,7 +521,6 @@ public class PlaneProjector {
                     gray = Math.max(0, Math.min(255, gray));
                 }
 
-                // Pixels outside the projected polygon remain black.
                 pixels[offset + x] = (byte) gray;
             }
         }
@@ -480,10 +530,6 @@ public class PlaneProjector {
         }
     }
 
-    /*
-     * Write a black frame with readable white error text.
-     * This frame occupies the invalid plane's position in the video.
-     */
     private static void saveErrorPng(
             String outputPath, int planeNumber, String errorMessage)
             throws IOException {
@@ -600,14 +646,12 @@ public class PlaneProjector {
                 System.err.println(
                         "Plane " + planeNumber + " failed: " + errorMessage);
 
-                // Generate this plane's error frame and continue.
                 saveErrorPng(
                         outputPath.toString(),
                         planeNumber,
                         errorMessage);
             }
 
-            // Every nonempty, non-comment CSV row gets one frame.
             planeNumber++;
 
             if (planeNumber % 25 == 0) {

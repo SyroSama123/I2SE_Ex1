@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Fixed README file and PlaneProjector file.">
+    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SRS.md" beforeDir="false" afterPath="$PROJECT_DIR$/SRS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PlaneProjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlaneProjector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +36,9 @@
     &quot;accountId&quot;: &quot;66615d06-6d01-4e52-a41f-954395f14a43&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -162,7 +165,7 @@
       <workItem from="1793022170201" duration="1518000" />
       <workItem from="1793024047371" duration="627000" />
       <workItem from="1793615379595" duration="7344000" />
-      <workItem from="1793706402160" duration="882000" />
+      <workItem from="1793706402160" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="Created the repository and added NRRDVolumeReader.java class.">
       <option name="closed" value="true" />
@@ -236,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793622410898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java.">
+      <option name="closed" value="true" />
+      <created>1793707499574</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1793707499574</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +263,7 @@
     <MESSAGE value="Deleted invalid csv file." />
     <MESSAGE value="Added a readme file." />
     <MESSAGE value="Fixed README file and PlaneProjector file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed README file and PlaneProjector file." />
+    <MESSAGE value="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java." />
   </component>
 </project>
