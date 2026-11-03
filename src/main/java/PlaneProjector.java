@@ -17,7 +17,7 @@ public class PlaneProjector {
     private static final double ISOSCELES_EPSILON = 0.001;
     private static final double GEOMETRY_EPSILON = 1e-12;
     private static final double MIN_COORDINATE = 0.0;
-    private static final double MAX_COORDINATE = 1024.0;
+    private static final double MAX_COORDINATE = 1023.0;
 
     private static final int ERROR_IMAGE_WIDTH = 512;
     private static final int ERROR_IMAGE_HEIGHT = 512;
@@ -80,7 +80,7 @@ public class PlaneProjector {
                 || coordinate > MAX_COORDINATE) {
 
             throw new IOException(
-                    "Coordinate must be between 0 and 1024 inclusive: "
+                    "Coordinate must be between 0 and 1023 inclusive: "
                             + coordinate);
         }
     }
