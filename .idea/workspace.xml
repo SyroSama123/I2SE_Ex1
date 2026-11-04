@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java.">
+    <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Fixed the orientation system in PlaneProjector.java so that isosceles triangles are oriented with their base at the bottom and isosceles trapezoids are oriented with their longer parallel base at the bottom.&#10;&#10;Added said change to the README.md file.">
+      <change afterPath="$PROJECT_DIR$/Algorithm_Definition.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlaneProjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlaneProjector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/boazcg/IdeaProjects/I2SE_Ex1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/boazcg/IdeaProjects/I2SE_Ex1/Datasets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,8 +79,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Datasets" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Datasets" />
@@ -165,7 +164,8 @@
       <workItem from="1793022170201" duration="1518000" />
       <workItem from="1793024047371" duration="627000" />
       <workItem from="1793615379595" duration="7344000" />
-      <workItem from="1793706402160" duration="2548000" />
+      <workItem from="1793706402160" duration="4829000" />
+      <workItem from="1793784243401" duration="1783000" />
     </task>
     <task id="LOCAL-00001" summary="Created the repository and added NRRDVolumeReader.java class.">
       <option name="closed" value="true" />
@@ -247,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793707499574</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed the orientation system in PlaneProjector.java so that isosceles triangles are oriented with their base at the bottom and isosceles trapezoids are oriented with their longer parallel base at the bottom.&#10;&#10;Added said change to the README.md file.">
+      <option name="closed" value="true" />
+      <created>1793709064887</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1793709064887</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +272,7 @@
     <MESSAGE value="Added a readme file." />
     <MESSAGE value="Fixed README file and PlaneProjector file." />
     <MESSAGE value="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="Altered SRS file to fit current project specifications.&#10;&#10;Fixed coordinate validation function in PlaneProjector.java." />
+    <MESSAGE value="Fixed the orientation system in PlaneProjector.java so that isosceles triangles are oriented with their base at the bottom and isosceles trapezoids are oriented with their longer parallel base at the bottom.&#10;&#10;Added said change to the README.md file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the orientation system in PlaneProjector.java so that isosceles triangles are oriented with their base at the bottom and isosceles trapezoids are oriented with their longer parallel base at the bottom.&#10;&#10;Added said change to the README.md file." />
   </component>
 </project>
