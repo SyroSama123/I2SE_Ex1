@@ -2,215 +2,500 @@
 
 ## Overview
 
-I2SE_Ex1 is a Java application developed for the Introduction to Software Engineering (OOP/OOD) assignment. The application projects planes defined by vertices onto a three-dimensional volume stored in an NRRD file and generates two-dimensional grayscale PNG images representing the resulting projections.
+I2SE_Ex1 is a Java application developed for the Introduction to Software Engineering (OOP/OOD) assignment.
 
-The project focuses on robust software design, algorithmic correctness, runtime efficiency, and handling input validation and errors.
+The application projects geometric planes, defined by vertices in three-dimensional space, onto a 3D scalar volume stored in an NRRD file. Each plane is rasterized into a two-dimensional grayscale PNG image representing the corresponding voxel values.
+
+The generated projection images are then combined into an MP4 video using FFmpeg.
+
+The project emphasizes robust software design, algorithmic correctness, runtime efficiency, input validation, and error handling.
 
 ## Features
 
-- **3D NRRD volume reading:** Reads a three-dimensional volume containing unsigned 8-bit, 16-bit, or 32-bit voxel values.
-- **Plane projection:** Projects triangles and trapezoids defined by their vertices onto the volume.
-- **Automatic orientation:**
-    - Isosceles triangles are oriented with their base at the bottom.
-    - Isosceles trapezoids are oriented with their longer parallel base at the bottom.
-- **Grayscale output:** Generates PNG images representing the projected voxel values.
-- **Video generation:** Supports combining generated projection images into an MP4 video using FFmpeg.
-- **Input validation:** Checks the validity of input coordinates and geometric constraints.
-- **Error handling:** Handles invalid input and projection failures.
+- **3D NRRD volume reading:** Supports signed and unsigned integer values (8, 16, 32, and 64 bits), as well as 32-bit and 64-bit floating-point values.
+- **Multiple NRRD encodings:** Supports raw and gzip-compressed data.
+- **Endian support:** Handles both little-endian and big-endian voxel data.
+- **Plane projection:** Projects isosceles triangles and isosceles trapezoids onto a 3D volume.
+- **Automatic orientation:** Places the triangle's base or the trapezoid's longer parallel side at the bottom of the projection.
+- **Barycentric rasterization:** Maps pixels in the 2D projection back to their corresponding 3D coordinates.
+- **Grayscale output:** Normalizes voxel values into 8-bit grayscale PNG images.
+- **Video generation:** Combines projection images into an MP4 video using FFmpeg.
+- **Error handling:** Generates an error image for invalid planes and continues processing subsequent planes.
+- **Performance optimization:** Preloads the entire NRRD volume into memory to avoid repeated disk access.
+- **Processing statistics:** Reports the number of successful and failed projections and the processing throughput.
 
 ## Requirements
 
-- Java 21 or later
-- Maven
-- FFmpeg, if MP4 video generation is required
+- Java 21 or later.
+- Maven.
+- FFmpeg installed and accessible through the system's `PATH`.
+- Sufficient memory to load the entire NRRD volume into memory.
 
-The NRRD-reading dependencies are declared in `pom.xml`.
+The NRRD reader is implemented directly in Java and does not require Bio-Formats.
 
 ## Input Format
 
-The input CSV file contains one plane per line. Each line specifies the coordinates of three or four vertices in the 3D volume.
+The application accepts two input files:
 
-The expected format is:
+1. A 3D NRRD volume (`.nrrd`).
+2. A CSV file containing plane definitions.
+
+### NRRD Volume
+
+The NRRD file must represent a three-dimensional scalar volume.
+
+Supported pixel types:
+
+| Type | Bit depth |
+|---|---:|
+| int8 / uint8 | 8 |
+| int16 / uint16 | 16 |
+| int32 / uint32 | 32 |
+| int64 / uint64 | 64 |
+| float | 32 |
+| double | 64 |
+
+Supported encodings:
+
+- `raw`
+- `gzip`
+- `gz`
+
+Both little-endian and big-endian byte orders are supported.
+
+The reader supports inline NRRD files (`.nrrd`). Detached NRRD files (`.nhdr`) are not supported.
+
+### CSV Plane Definitions
+
+The CSV file contains one plane per line. Each line defines either a triangle or a quadrilateral using three-dimensional vertex coordinates.
+
+**Triangle — 9 fields:**
 
 ```text
 x1,y1,z1,x2,y2,z2,x3,y3,z3
 ```
 
-for a triangle, or:
+**Quadrilateral — 12 fields:**
 
 ```text
 x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
 ```
 
-for a trapezoid.
+Each vertex consists of three coordinates:
 
-Each vertex is represented by three integer coordinates:
+- `x`: X-coordinate.
+- `y`: Y-coordinate.
+- `z`: Z-coordinate.
 
-- `x`: X-coordinate
-- `y`: Y-coordinate
-- `z`: Z-coordinate
+Coordinates are zero-based and may be integers or decimal values.
 
-The coordinates use zero-based indexing.
+Example:
 
-### Coordinate Constraints
+```csv
+100,100,50,200,100,50,150,200,50
+100,100,60,200,100,60,175,200,60,125,200,60
+```
+
+The CSV parser also supports:
+
+- Empty lines, which are ignored.
+- Comment lines beginning with `#`, which are ignored.
+- Optional empty fourth-vertex fields in a 12-field row, allowing a triangle to be represented using 12 fields.
+
+## Coordinate Constraints
 
 Each coordinate must satisfy:
 
 ```text
-0 <= coordinate < 1024
+0 <= coordinate <= 1023
 ```
 
-The coordinates must also be valid for the dimensions of the loaded volume.
+Coordinates are additionally checked against the actual dimensions of the loaded volume during rasterization.
 
-### Geometric Constraints
+Coordinates outside the volume do not cause an entire projection to fail. Pixels mapped outside the volume are simply excluded from the projection.
 
-**Triangles**
-
-The three vertices must define an isosceles triangle. The algorithm identifies the base as the side opposite the apex, where the two sides connecting the apex to the base endpoints have equal lengths.
-
-**Trapezoids**
-
-The four vertices must define a valid trapezoid, with at least one pair of parallel opposite sides. The algorithm identifies the parallel sides and uses the longer one as the base at the bottom of the projection.
-
-The vertices should be provided in perimeter order around the shape.
-
-## Projection Orientation
-
-The projection algorithm automatically establishes a consistent orientation for the supported shapes.
+## Geometric Constraints
 
 ### Isosceles Triangles
 
-The algorithm identifies the equal sides and determines the base as the remaining side. The triangle is oriented so that its base appears at the bottom of the resulting image and its apex appears above it.
+A triangle must:
+
+- Have three distinct vertices.
+- Have non-collinear vertices.
+- Have at least two approximately equal side lengths.
+
+The permitted difference between equal side lengths is:
+
+```text
+0.001
+```
+
+The algorithm identifies the two equal sides and determines the remaining side as the base.
 
 ### Isosceles Trapezoids
 
-The algorithm identifies the parallel sides and compares their lengths. The longer parallel side is placed at the bottom of the resulting image, while the shorter parallel side is placed above it.
+A quadrilateral must:
 
-If both parallel sides have equal lengths, either side may be selected as the bottom base.
+- Have four distinct vertices.
+- Have non-collinear first three vertices.
+- Have all four vertices approximately coplanar.
+- Have at least one pair of parallel opposite sides.
+- Have approximately equal non-parallel sides (the legs).
 
-### Coordinate Mapping
+The vertices must be supplied in perimeter order:
 
-The algorithm constructs a local coordinate system for the plane:
+```text
+A -> B -> C -> D
+```
+
+The permitted geometric tolerance for coplanarity, parallelism, and equal side lengths is `0.001`.
+
+## Projection Algorithm
+
+The projection process consists of several stages.
+
+### 1. Geometry Validation
+
+The application validates the supplied vertices and verifies that they define a supported geometric shape.
+
+Invalid geometry causes the current plane to fail, but does not interrupt the processing of subsequent planes.
+
+### 2. Base Identification
+
+For an isosceles triangle, the algorithm identifies the equal sides and selects the remaining side as the base.
+
+For an isosceles trapezoid, it identifies the parallel sides and selects the longer one as the base.
+
+If both parallel sides have equal lengths, the first identified base is selected.
+
+### 3. Local Coordinate System
+
+A local two-dimensional coordinate system is constructed for the plane:
 
 - The horizontal axis follows the selected base.
-- The vertical axis points from the base toward the opposite vertex or opposite base.
-- The vertical image coordinate is inverted during rasterization so that the base appears at the bottom of the image.
+- The vertical axis is perpendicular to the horizontal axis within the plane.
+- The vertical direction is chosen so that the apex or opposite base lies above the selected base.
 
-This approach preserves the relationship between the original 3D vertices and their projected positions.
+This ensures consistent projection orientation regardless of the original 3D orientation.
+
+### 4. 2D Projection Coordinates
+
+Each 3D vertex is transformed into the local coordinate system using dot products with the local basis vectors.
+
+The resulting coordinates are translated so that the minimum X and maximum Y values define the image boundaries.
+
+The pixel spacing is one unit.
+
+The resulting image dimensions are calculated as:
+
+```text
+width  = ceil(maxX - minX) + 1
+height = ceil(maxY - minY) + 1
+```
+
+Both dimensions are guaranteed to be at least one pixel.
+
+### 5. Triangle Rasterization
+
+The projected shape is rasterized using barycentric coordinates.
+
+For each pixel inside a projected triangle, barycentric weights are calculated and used to interpolate the corresponding 3D coordinates.
+
+The interpolated coordinates are rounded to the nearest voxel:
+
+```text
+voxelX = round(x)
+voxelY = round(y)
+voxelZ = round(z)
+```
+
+If the resulting voxel lies inside the volume, its value is retrieved and assigned to the corresponding output pixel.
+
+A mask is maintained to distinguish valid projected pixels from pixels outside the volume or outside the projected shape.
+
+### 6. Quadrilateral Handling
+
+Quadrilaterals are divided into two triangles:
+
+```text
+Triangle 1: A, B, C
+Triangle 2: A, C, D
+```
+
+Both triangles are rasterized using the same barycentric interpolation procedure.
+
+### 7. Grayscale Normalization
+
+Each projection is independently normalized into an 8-bit grayscale image.
+
+The minimum and maximum valid voxel values are determined, and each pixel is mapped to the range:
+
+```text
+0 - 255
+```
+
+The normalization formula is:
+
+```text
+gray = 255 * (value - min) / (max - min)
+```
+
+Invalid pixels are assigned a grayscale value of zero.
+
+If all valid pixel values are identical, the output remains black because normalization is not performed.
 
 ## Output
 
-For each valid plane in the CSV file, the application generates a grayscale PNG projection.
+### Projection PNG Images
 
-The generated images are saved in:
+For every non-empty, non-comment CSV row, the application generates one PNG image.
+
+Successful projections contain the normalized grayscale voxel values.
+
+Failed projections produce a dedicated error image containing:
+
+- The plane number.
+- The error message.
+- An indication that the plane was skipped.
+
+Both successful and failed planes receive sequential frame numbers.
+
+The output directory is named:
 
 ```text
-Datasets/projections/
+projection_frames/
 ```
 
-The output filenames follow this pattern:
+It is created next to the requested MP4 output file.
+
+Example:
 
 ```text
-projection_0.png
-projection_1.png
-projection_2.png
-...
+project/
+├── input.nrrd
+├── planes.csv
+├── output.mp4
+└── projection_frames/
+    ├── projection_0.png
+    ├── projection_1.png
+    ├── projection_2.png
+    └── ...
 ```
 
-The image dimensions depend on the geometry of the projected plane and the distance between its defining vertices.
+Before processing begins, existing files matching `projection_<number>.png` in the output directory are deleted to prevent stale frames from being included in the video.
 
-The grayscale values are derived from the corresponding voxel values in the 3D volume.
+### MP4 Video
 
-If video generation is enabled, the generated PNG images are sorted and passed to FFmpeg to produce an MP4 video.
+After all planes have been processed, the application combines the generated PNG frames into an MP4 video.
+
+Default video settings:
+
+| Property | Value |
+|---|---|
+| Frames per second | 50 |
+| Resolution | 512 × 512 |
+| Video codec | MPEG-4 (`mpeg4`) |
+| Quality | 3 (`-q:v 3`) |
+| Pixel format | `yuv420p` |
+| Fast start | Enabled |
+| Maximum FFmpeg execution time | 10 minutes |
+
+Images are scaled while preserving their aspect ratio and centered on a 512 × 512 canvas.
+
+The video duration is calculated as:
+
+```text
+duration = number of frames / frames per second
+```
+
+Error images are included as frames, preserving the original plane sequence.
 
 ## Project Structure
 
-The project includes the following main components:
+The main application components are:
 
-- `NRRDVolumeReader.java` — Reads the NRRD volume and provides access to individual voxel values.
-- `PlaneProjector.java` — Validates plane geometry, determines its orientation, and generates the 2D projection.
-- `Mp4VideoCreator.java` — Collects the generated PNG images and uses FFmpeg to create an MP4 video.
-- `pom.xml` — Defines the Maven project configuration, Java version, and dependencies.
-- `Datasets/projections/` — Contains the generated projection images.
+| File | Responsibility |
+|---|---|
+| `Main.java` | Application entry point, argument validation, and processing workflow. |
+| `NRRDVolumeReader.java` | Parses NRRD headers, loads volume data, and provides voxel access. |
+| `PlaneProjector.java` | Validates geometric shapes, constructs projection coordinates, rasterizes planes, and generates PNG images. |
+| `Mp4VideoCreator.java` | Validates generated frames and invokes FFmpeg to create the MP4 video. |
+| `pom.xml` | Maven project configuration, Java version, and dependencies. |
 
 ## Building the Project
 
-Navigate to the project directory and run:
+Navigate to the project root directory and execute:
 
 ```bash
 mvn clean package
 ```
 
-Maven compiles the source code, resolves the declared dependencies, and packages the application.
+Maven compiles the source code, resolves dependencies, executes the configured build lifecycle, and packages the application.
+
+The resulting JAR file is located in the Maven `target/` directory.
+
+If necessary, ensure that the JAR manifest specifies `Main` as the application entry point.
 
 ## Running the Application
 
-The intended executable interface is:
+The application requires exactly three command-line arguments.
 
 ```bash
-java -jar I2SE_Ex1.jar planes.csv video.mp4
+java -jar I2SE_Ex1.jar input.nrrd planes.csv output.mp4
 ```
 
-Where:
+Argument descriptions:
 
-- `I2SE_Ex1.jar` is the executable application.
-- `planes.csv` is the input CSV file containing the plane definitions.
-- `video.mp4` is the desired output video filename.
+| Argument | Description |
+|---|---|
+| `input.nrrd` | Path to the input 3D NRRD volume. |
+| `planes.csv` | Path to the CSV file containing plane definitions. |
+| `output.mp4` | Path where the resulting MP4 video will be saved. |
 
-The exact command-line arguments must match the application's implemented entry point. If the NRRD volume path is also required by the implementation, it must be supplied according to the argument format supported by the application.
+Absolute and relative paths are supported.
+
+The parent directory of the requested MP4 output file is created automatically if it does not exist.
+
+### Example
+
+```bash
+java -jar I2SE_Ex1.jar \
+    Datasets/head.nrrd \
+    Datasets/planes.csv \
+    Results/projection.mp4
+```
+
+The application will:
+
+1. Validate the input files.
+2. Prepare the projection frames directory.
+3. Load and preload the NRRD volume.
+4. Process each plane in the CSV file.
+5. Generate one PNG frame per processed plane.
+6. Report successful and failed projections.
+7. Invoke FFmpeg to generate the MP4 video.
+8. Verify that the output video exists and is not empty.
+
+The application returns exit code `0` on success and `1` on failure.
 
 ## Error Handling
 
-The application validates input and reports errors encountered during processing.
+The application handles errors at both the application and individual-plane levels.
 
-Potential errors include:
+### Application-Level Errors
 
-- Missing or unreadable input files.
+The application terminates with an error status if it encounters problems such as:
+
+- Incorrect command-line arguments.
+- Missing input files.
+- Invalid or unsupported NRRD headers.
+- Unsupported NRRD pixel types or encodings.
+- Truncated NRRD data.
+- Failure to create output directories.
+- Failure to write output images.
+- Missing FFmpeg executable.
+- FFmpeg execution failure or timeout.
+- Failure to produce a valid output video.
+
+### Plane-Level Errors
+
+Individual plane failures do not stop the entire projection process.
+
+Potential plane-level errors include:
+
 - Invalid CSV formatting.
-- Invalid or out-of-range coordinates.
-- Coordinates outside the loaded volume.
-- Invalid triangle or trapezoid geometry.
-- Failure to read the NRRD volume.
-- Failure to write projection images.
-- Failure to execute FFmpeg or generate the output video.
+- Non-numeric coordinates.
+- Coordinates outside the supported range.
+- Coincident vertices.
+- Collinear vertices.
+- Non-isosceles triangles.
+- Non-coplanar quadrilaterals.
+- Invalid trapezoid geometry.
+- Degenerate projected triangles.
 
-Invalid input should be reported clearly rather than silently producing an incorrect projection.
+When a plane fails, the application:
 
-## Implementation Notes
+1. Reports the error to the console.
+2. Generates an error PNG frame.
+3. Continues processing the next plane.
 
-- The volume is accessed using zero-based coordinates.
-- Voxel values are interpreted according to their stored bit depth and byte order.
-- Projection orientation is determined from the geometry of the input vertices rather than relying on a fixed vertex order for the base.
-- The rasterization process maps points in the local plane coordinate system to pixels in the output image.
-- PNG images are generated before video creation.
-- FFmpeg is used for video encoding rather than implementing a video encoder directly.
+This ensures that one invalid plane does not prevent the remaining valid planes from being processed.
+
+## Performance Considerations
+
+Several implementation choices improve runtime efficiency:
+
+- **Volume preloading:** The entire NRRD volume is loaded into memory before projection begins, avoiding repeated file reads.
+- **Efficient voxel access:** Voxel values are retrieved directly from the preloaded byte array.
+- **Triangle rasterization:** Only pixels within each projected triangle's bounding box are considered.
+- **Shared rasterization procedure:** Both triangles and quadrilaterals use the same rasterization implementation.
+- **Sequential frame generation:** Images are written directly to disk instead of retaining every generated image in memory.
+- **External video encoding:** FFmpeg handles video encoding through a separate process.
+
+The main memory requirement comes from loading the complete volume into memory, in addition to the temporary projection matrices and masks.
 
 ## Troubleshooting
 
-### The projection is upside down
+### The application reports incorrect command-line arguments
 
-Verify that the latest version of `PlaneProjector.java` is being used. The projection should automatically place the base of an isosceles triangle at the bottom and the longer parallel base of a trapezoid at the bottom.
+Ensure that exactly three arguments are supplied:
 
-### The program rejects a plane
+```bash
+java -jar I2SE_Ex1.jar input.nrrd planes.csv output.mp4
+```
+
+### The application cannot load the NRRD file
 
 Check that:
 
-- The CSV line contains exactly nine values for a triangle or twelve values for a trapezoid.
-- The coordinates are integers.
-- The coordinates are within the supported range and the volume dimensions.
-- The vertices define a valid isosceles triangle or trapezoid.
-- The vertices of a trapezoid are listed in perimeter order.
+- The file exists and is readable.
+- The file is an inline `.nrrd` file rather than a detached `.nhdr` file.
+- The volume has exactly three dimensions.
+- The pixel type is supported.
+- The encoding is `raw`, `gzip`, or `gz`.
+- The data payload is complete.
 
-### The PNG images are not generated
+### The application rejects a plane
 
-Check that the output directory is writable and that the input volume and CSV file can be read successfully.
+Check that:
+
+- Each CSV row contains 9 or 12 fields.
+- Coordinates are valid numeric values.
+- All coordinates are between 0 and 1023 inclusive.
+- Triangle vertices define an isosceles triangle.
+- Quadrilateral vertices define an isosceles trapezoid.
+- Quadrilateral vertices are listed in perimeter order.
+- No required vertices coincide.
+
+### Some projected pixels appear black
+
+Pixels outside the volume are excluded from the projection and displayed as black.
+
+Additionally, each projection is normalized independently. If all valid voxel values in a projection are identical, the image will be entirely black.
+
+### The projection PNG images are not generated
+
+Check that:
+
+- The input NRRD file can be loaded.
+- The CSV file contains valid plane definitions.
+- The output directory is writable.
+- The application has sufficient available memory.
+
+If a plane fails validation, an error image is generated instead of a grayscale projection.
 
 ### The MP4 video is not generated
 
-Ensure that FFmpeg is installed and available through the system's `PATH`. Verify that the projection images were generated successfully before video creation.
+Ensure that:
+
+- FFmpeg is installed.
+- FFmpeg is accessible through the system's `PATH`.
+- At least one projection frame was generated.
+- The generated frames are consecutively numbered, starting from `projection_0.png`.
+- The output directory is writable.
 
 ## Assignment Context
 
 This project was developed for the course **Introduction to Software Engineering (OOP/OOD)**.
 
-The assignment focuses on implementing a plane-projection algorithm for a 3D volume while emphasizing software design, robustness, runtime efficiency, input validation, and code quality.
+The assignment focuses on implementing a plane-projection algorithm for a three-dimensional volume while emphasizing software architecture, robustness, algorithmic correctness, runtime efficiency, input validation, and overall code quality.
