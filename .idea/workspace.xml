@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3be2a3c1-517e-421b-accc-3b29a1c8b40a" name="Changes" comment="Added an Algorithm_Definition.md file outlining and explaining the current project algorithm.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/MRHead_1.nrrd" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/MRHead_1.nrrd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Plane_CSVs/horizontal_middle_planes_400.csv" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/Plane_CSVs/horizontal_middle_planes_400.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Plane_CSVs/isosceles_triangles_3d.csv" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/Plane_CSVs/isosceles_triangles_3d.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Plane_CSVs/planes_400.csv" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/Plane_CSVs/planes_400.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Plane_CSVs/planes_400_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/Plane_CSVs/planes_400_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datasets/Plane_CSVs/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/My_Testing_Datasets/Plane_CSVs/test.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
