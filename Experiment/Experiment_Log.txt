@@ -1,0 +1,811 @@
+(base) boazcg@Boaz-Laptop:~/IdeaProjects/I2SE_Ex1/I2SE_Ex1_Demo$ java -jar I2SE_Ex1_Demo.jar MRHead_1.nrrd planes_400_test.csv /home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/experiment_output.mp4
+Loading NRRD: /home/boazcg/IdeaProjects/I2SE_Ex1/I2SE_Ex1_Demo/MRHead_1.nrrd
+Reading planes: /home/boazcg/IdeaProjects/I2SE_Ex1/I2SE_Ex1_Demo/planes_400_test.csv
+Output video: /home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/experiment_output.mp4
+NRRD loaded successfully.
+Width: 256
+Height: 256
+Depth: 130
+Pixel type: int16
+Generated projection for plane 0
+Generated projection for plane 1
+Generated projection for plane 2
+Generated projection for plane 3
+Plane 4 failed: Coordinate must be between 0 and 1023 inclusive: -2.2842
+Generated projection for plane 5
+Generated projection for plane 6
+Generated projection for plane 7
+Plane 8 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000003, BC=50.990222, CD=53.851707, DA=72.801089. Allowed difference: 0.001.
+Plane 9 failed: Coordinate must be between 0 and 1023 inclusive: -45.0941
+Generated projection for plane 10
+Plane 11 failed: Triangle is not isosceles. Side lengths: AB=57.911793, BC=113.899463, CA=94.693199. Allowed difference: 0.001.
+Generated projection for plane 12
+Plane 13 failed: Coordinate must be between 0 and 1023 inclusive: -32.458
+Generated projection for plane 14
+Generated projection for plane 15
+Plane 16 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=91.615281, BC=71.911386, CD=49.999912, DA=80.123074. Allowed difference: 0.001.
+Generated projection for plane 17
+Plane 18 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=93.784478, BC=77.069665, CD=49.999993, DA=85.166032. Allowed difference: 0.001.
+Generated projection for plane 19
+Generated projection for plane 20
+Generated projection for plane 21
+Generated projection for plane 22
+Plane 23 failed: Coordinate must be between 0 and 1023 inclusive: -0.4202
+Generated projection for plane 24
+Processed 25 planes | 62.6 planes/sec
+Generated projection for plane 25
+Generated projection for plane 26
+Generated projection for plane 27
+Generated projection for plane 28
+Generated projection for plane 29
+Generated projection for plane 30
+Generated projection for plane 31
+Plane 32 failed: Coordinate must be between 0 and 1023 inclusive: -6.9503
+Generated projection for plane 33
+Plane 34 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000020, BC=50.990191, CD=53.851624, DA=72.801107. Allowed difference: 0.001.
+Generated projection for plane 35
+Generated projection for plane 36
+Plane 37 failed: Triangle is not isosceles. Side lengths: AB=97.874805, BC=126.277194, CA=107.459133. Allowed difference: 0.001.
+Generated projection for plane 38
+Plane 39 failed: Triangle is not isosceles. Side lengths: AB=85.492637, BC=134.351695, CA=123.995646. Allowed difference: 0.001.
+Generated projection for plane 40
+Plane 41 failed: Coordinate must be between 0 and 1023 inclusive: -3.5181
+Generated projection for plane 42
+Plane 43 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=64.241931, BC=89.678803, CD=50.000064, DA=92.030126. Allowed difference: 0.001.
+Plane 44 failed: Coordinate must be between 0 and 1023 inclusive: -2.6139
+Generated projection for plane 45
+Plane 46 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999967, BC=50.990205, CD=53.851679, DA=72.801067. Allowed difference: 0.001.
+Generated projection for plane 47
+Generated projection for plane 48
+Generated projection for plane 49
+Processed 50 planes | 109.5 planes/sec
+Plane 50 failed: Coordinate must be between 0 and 1023 inclusive: -89.5066
+Plane 51 failed: Coordinate must be between 0 and 1023 inclusive: -37.3706
+Plane 52 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999997, BC=50.990218, CD=53.851695, DA=72.801118. Allowed difference: 0.001.
+Generated projection for plane 53
+Generated projection for plane 54
+Generated projection for plane 55
+Generated projection for plane 56
+Generated projection for plane 57
+Generated projection for plane 58
+Plane 59 failed: Triangle is not isosceles. Side lengths: AB=61.606428, BC=142.718405, CA=106.254211. Allowed difference: 0.001.
+Plane 60 failed: Coordinate must be between 0 and 1023 inclusive: -8.7927
+Generated projection for plane 61
+Generated projection for plane 62
+Generated projection for plane 63
+Plane 64 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999993, BC=50.990176, CD=53.851660, DA=72.801000. Allowed difference: 0.001.
+Generated projection for plane 65
+Generated projection for plane 66
+Generated projection for plane 67
+Generated projection for plane 68
+Generated projection for plane 69
+Generated projection for plane 70
+Plane 71 failed: Triangle is not isosceles. Side lengths: AB=45.955642, BC=27.375280, CA=73.330922. Allowed difference: 0.001.
+Generated projection for plane 72
+Generated projection for plane 73
+Plane 74 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999945, BC=50.990194, CD=53.851644, DA=72.801097. Allowed difference: 0.001.
+Processed 75 planes | 146.0 planes/sec
+Generated projection for plane 75
+Generated projection for plane 76
+Generated projection for plane 77
+Generated projection for plane 78
+Generated projection for plane 79
+Generated projection for plane 80
+Plane 81 failed: Coordinate must be between 0 and 1023 inclusive: -40.9537
+Plane 82 failed: Triangle is not isosceles. Side lengths: AB=95.248947, BC=133.858371, CA=118.065276. Allowed difference: 0.001.
+Generated projection for plane 83
+Generated projection for plane 84
+Generated projection for plane 85
+Generated projection for plane 86
+Plane 87 failed: Coordinate must be between 0 and 1023 inclusive: -31.9953
+Plane 88 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=77.259689, BC=78.703631, CD=50.000011, DA=83.738029. Allowed difference: 0.001.
+Generated projection for plane 89
+Plane 90 failed: Coordinate must be between 0 and 1023 inclusive: -25.425
+Plane 91 failed: Coordinate must be between 0 and 1023 inclusive: -0.596
+Generated projection for plane 92
+Generated projection for plane 93
+Plane 94 failed: Triangle is not isosceles. Side lengths: AB=72.328975, BC=138.764660, CA=109.674684. Allowed difference: 0.001.
+Plane 95 failed: Coordinate must be between 0 and 1023 inclusive: -13.0382
+Generated projection for plane 96
+Generated projection for plane 97
+Plane 98 failed: Coordinate must be between 0 and 1023 inclusive: -25.1473
+Generated projection for plane 99
+Processed 100 planes | 172.1 planes/sec
+Plane 100 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=96.892792, BC=66.546638, CD=50.000012, DA=76.388706. Allowed difference: 0.001.
+Plane 101 failed: Coordinate must be between 0 and 1023 inclusive: -10.0669
+Generated projection for plane 102
+Plane 103 failed: Coordinate must be between 0 and 1023 inclusive: -73.8772
+Generated projection for plane 104
+Generated projection for plane 105
+Generated projection for plane 106
+Generated projection for plane 107
+Generated projection for plane 108
+Generated projection for plane 109
+Generated projection for plane 110
+Generated projection for plane 111
+Plane 112 failed: Coordinate must be between 0 and 1023 inclusive: -15.5426
+Generated projection for plane 113
+Generated projection for plane 114
+Generated projection for plane 115
+Generated projection for plane 116
+Generated projection for plane 117
+Plane 118 failed: Coordinate must be between 0 and 1023 inclusive: -5.3285
+Generated projection for plane 119
+Plane 120 failed: Coordinate must be between 0 and 1023 inclusive: -10.4537
+Generated projection for plane 121
+Plane 122 failed: Coordinate must be between 0 and 1023 inclusive: -25.3426
+Plane 123 failed: Triangle is not isosceles. Side lengths: AB=98.930044, BC=129.776350, CA=109.409985. Allowed difference: 0.001.
+Generated projection for plane 124
+Processed 125 planes | 196.9 planes/sec
+Plane 125 failed: Coordinate must be between 0 and 1023 inclusive: -15.5682
+Generated projection for plane 126
+Plane 127 failed: Coordinate must be between 0 and 1023 inclusive: -12.4823
+Plane 128 failed: Coordinate must be between 0 and 1023 inclusive: -2.199
+Generated projection for plane 129
+Plane 130 failed: Triangle is not isosceles. Side lengths: AB=57.270969, BC=21.713198, CA=78.984167. Allowed difference: 0.001.
+Generated projection for plane 131
+Generated projection for plane 132
+Generated projection for plane 133
+Plane 134 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=72.626437, BC=58.079703, CD=49.999981, DA=63.655711. Allowed difference: 0.001.
+Generated projection for plane 135
+Plane 136 failed: Coordinate must be between 0 and 1023 inclusive: -79.0523
+Plane 137 failed: Triangle is not isosceles. Side lengths: AB=37.036842, BC=81.130452, CA=118.167294. Allowed difference: 0.001.
+Generated projection for plane 138
+Generated projection for plane 139
+Generated projection for plane 140
+Plane 141 failed: Triangle is not isosceles. Side lengths: AB=97.223405, BC=141.357743, CA=119.106318. Allowed difference: 0.001.
+Generated projection for plane 142
+Generated projection for plane 143
+Generated projection for plane 144
+Generated projection for plane 145
+Plane 146 failed: Coordinate must be between 0 and 1023 inclusive: -37.8669
+Generated projection for plane 147
+Generated projection for plane 148
+Generated projection for plane 149
+Processed 150 planes | 218.6 planes/sec
+Generated projection for plane 150
+Generated projection for plane 151
+Plane 152 failed: Coordinate must be between 0 and 1023 inclusive: -30.5463
+Generated projection for plane 153
+Generated projection for plane 154
+Plane 155 failed: Triangle is not isosceles. Side lengths: AB=46.074828, BC=28.759034, CA=74.833862. Allowed difference: 0.001.
+Generated projection for plane 156
+Generated projection for plane 157
+Generated projection for plane 158
+Plane 159 failed: Coordinate must be between 0 and 1023 inclusive: -43.468
+Plane 160 failed: Coordinate must be between 0 and 1023 inclusive: -2.2967
+Plane 161 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999974, BC=50.990178, CD=53.851604, DA=72.801171. Allowed difference: 0.001.
+Generated projection for plane 162
+Plane 163 failed: Coordinate must be between 0 and 1023 inclusive: -32.9177
+Plane 164 failed: Coordinate must be between 0 and 1023 inclusive: -0.7034
+Generated projection for plane 165
+Generated projection for plane 166
+Generated projection for plane 167
+Generated projection for plane 168
+Plane 169 failed: Coordinate must be between 0 and 1023 inclusive: -4.1313
+Generated projection for plane 170
+Generated projection for plane 171
+Generated projection for plane 172
+Plane 173 failed: Triangle is not isosceles. Side lengths: AB=95.715059, BC=148.747639, CA=125.309956. Allowed difference: 0.001.
+Generated projection for plane 174
+Processed 175 planes | 239.8 planes/sec
+Generated projection for plane 175
+Generated projection for plane 176
+Generated projection for plane 177
+Generated projection for plane 178
+Generated projection for plane 179
+Generated projection for plane 180
+Plane 181 failed: Triangle is not isosceles. Side lengths: AB=34.802131, BC=58.275781, CA=93.077911. Allowed difference: 0.001.
+Plane 182 failed: Coordinate must be between 0 and 1023 inclusive: -5.0968
+Generated projection for plane 183
+Plane 184 failed: Triangle is not isosceles. Side lengths: AB=81.397754, BC=143.459842, CA=101.744775. Allowed difference: 0.001.
+Generated projection for plane 185
+Generated projection for plane 186
+Generated projection for plane 187
+Plane 188 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000061, BC=50.990119, CD=53.851652, DA=72.801115. Allowed difference: 0.001.
+Plane 189 failed: Triangle is not isosceles. Side lengths: AB=73.752680, BC=130.706493, CA=115.415652. Allowed difference: 0.001.
+Plane 190 failed: Coordinate must be between 0 and 1023 inclusive: -35.0042
+Generated projection for plane 191
+Plane 192 failed: Coordinate must be between 0 and 1023 inclusive: -6.7526
+Generated projection for plane 193
+Generated projection for plane 194
+Generated projection for plane 195
+Generated projection for plane 196
+Generated projection for plane 197
+Plane 198 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000102, BC=50.990233, CD=53.851586, DA=72.801084. Allowed difference: 0.001.
+Generated projection for plane 199
+Processed 200 planes | 256.4 planes/sec
+Plane 200 failed: Coordinate must be between 0 and 1023 inclusive: -6.062
+Generated projection for plane 201
+Generated projection for plane 202
+Generated projection for plane 203
+Plane 204 failed: Coordinate must be between 0 and 1023 inclusive: -4.5097
+Generated projection for plane 205
+Plane 206 failed: Coordinate must be between 0 and 1023 inclusive: -23.1895
+Plane 207 failed: Coordinate must be between 0 and 1023 inclusive: -3.336
+Generated projection for plane 208
+Generated projection for plane 209
+Generated projection for plane 210
+Generated projection for plane 211
+Plane 212 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000017, BC=50.990224, CD=53.851616, DA=72.801106. Allowed difference: 0.001.
+Generated projection for plane 213
+Generated projection for plane 214
+Plane 215 failed: Triangle is not isosceles. Side lengths: AB=68.641842, BC=153.488716, CA=116.610566. Allowed difference: 0.001.
+Plane 216 failed: Triangle is not isosceles. Side lengths: AB=30.979447, BC=82.448156, CA=113.427604. Allowed difference: 0.001.
+Plane 217 failed: Triangle is not isosceles. Side lengths: AB=43.037912, BC=65.656069, CA=108.693981. Allowed difference: 0.001.
+Plane 218 failed: Coordinate must be between 0 and 1023 inclusive: -58.5614
+Plane 219 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000002, BC=50.990204, CD=53.851591, DA=72.801072. Allowed difference: 0.001.
+Plane 220 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999981, BC=50.990163, CD=53.851641, DA=72.801024. Allowed difference: 0.001.
+Plane 221 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=91.125967, BC=63.730454, CD=50.000003, DA=72.769041. Allowed difference: 0.001.
+Plane 222 failed: Coordinate must be between 0 and 1023 inclusive: -99.0241
+Generated projection for plane 223
+Plane 224 failed: Coordinate must be between 0 and 1023 inclusive: -7.9844
+Processed 225 planes | 266.5 planes/sec
+Generated projection for plane 225
+Generated projection for plane 226
+Generated projection for plane 227
+Generated projection for plane 228
+Generated projection for plane 229
+Generated projection for plane 230
+Generated projection for plane 231
+Generated projection for plane 232
+Plane 233 failed: Coordinate must be between 0 and 1023 inclusive: -98.0756
+Generated projection for plane 234
+Generated projection for plane 235
+Generated projection for plane 236
+Plane 237 failed: Coordinate must be between 0 and 1023 inclusive: -1.7694
+Generated projection for plane 238
+Plane 239 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=97.293049, BC=68.018009, CD=50.000023, DA=77.751062. Allowed difference: 0.001.
+Plane 240 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000021, BC=50.990182, CD=53.851655, DA=72.801180. Allowed difference: 0.001.
+Generated projection for plane 241
+Generated projection for plane 242
+Plane 243 failed: Triangle is not isosceles. Side lengths: AB=73.209599, BC=135.798375, CA=124.112984. Allowed difference: 0.001.
+Generated projection for plane 244
+Plane 245 failed: Triangle is not isosceles. Side lengths: AB=70.998033, BC=149.921760, CA=104.463625. Allowed difference: 0.001.
+Plane 246 failed: Coordinate must be between 0 and 1023 inclusive: -50.6227
+Generated projection for plane 247
+Generated projection for plane 248
+Generated projection for plane 249
+Processed 250 planes | 281.1 planes/sec
+Generated projection for plane 250
+Generated projection for plane 251
+Generated projection for plane 252
+Plane 253 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000110, BC=50.990236, CD=53.851679, DA=72.801095. Allowed difference: 0.001.
+Generated projection for plane 254
+Plane 255 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000083, BC=50.990202, CD=53.851716, DA=72.801107. Allowed difference: 0.001.
+Generated projection for plane 256
+Plane 257 failed: Coordinate must be between 0 and 1023 inclusive: -2.4551
+Generated projection for plane 258
+Generated projection for plane 259
+Generated projection for plane 260
+Generated projection for plane 261
+Generated projection for plane 262
+Generated projection for plane 263
+Generated projection for plane 264
+Generated projection for plane 265
+Generated projection for plane 266
+Plane 267 failed: Coordinate must be between 0 and 1023 inclusive: -59.5192
+Generated projection for plane 268
+Generated projection for plane 269
+Generated projection for plane 270
+Generated projection for plane 271
+Plane 272 failed: Coordinate must be between 0 and 1023 inclusive: -9.3364
+Plane 273 failed: Triangle is not isosceles. Side lengths: AB=54.248203, BC=28.442765, CA=82.690968. Allowed difference: 0.001.
+Generated projection for plane 274
+Processed 275 planes | 294.6 planes/sec
+Generated projection for plane 275
+Plane 276 failed: Coordinate must be between 0 and 1023 inclusive: -10.2407
+Generated projection for plane 277
+Generated projection for plane 278
+Plane 279 failed: Coordinate must be between 0 and 1023 inclusive: -15.0299
+Generated projection for plane 280
+Generated projection for plane 281
+Generated projection for plane 282
+Generated projection for plane 283
+Generated projection for plane 284
+Plane 285 failed: Triangle is not isosceles. Side lengths: AB=94.692451, BC=161.087902, CA=127.411711. Allowed difference: 0.001.
+Generated projection for plane 286
+Plane 287 failed: Coordinate must be between 0 and 1023 inclusive: -72.0364
+Generated projection for plane 288
+Generated projection for plane 289
+Generated projection for plane 290
+Plane 291 failed: Coordinate must be between 0 and 1023 inclusive: -22.12
+Generated projection for plane 292
+Plane 293 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999982, BC=50.990257, CD=53.851660, DA=72.801035. Allowed difference: 0.001.
+Generated projection for plane 294
+Generated projection for plane 295
+Generated projection for plane 296
+Generated projection for plane 297
+Plane 298 failed: Triangle is not isosceles. Side lengths: AB=36.614503, BC=69.671770, CA=106.286273. Allowed difference: 0.001.
+Generated projection for plane 299
+Processed 300 planes | 308.2 planes/sec
+Generated projection for plane 300
+Generated projection for plane 301
+Generated projection for plane 302
+Generated projection for plane 303
+Plane 304 failed: Coordinate must be between 0 and 1023 inclusive: -4.9252
+Generated projection for plane 305
+Generated projection for plane 306
+Generated projection for plane 307
+Plane 308 failed: Coordinate must be between 0 and 1023 inclusive: -6.4654
+Plane 309 failed: Coordinate must be between 0 and 1023 inclusive: -1.359
+Plane 310 failed: Coordinate must be between 0 and 1023 inclusive: -41.888
+Plane 311 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=79.999986, BC=50.990173, CD=53.851607, DA=72.801063. Allowed difference: 0.001.
+Generated projection for plane 312
+Plane 313 failed: Coordinate must be between 0 and 1023 inclusive: -3.705
+Generated projection for plane 314
+Plane 315 failed: Coordinate must be between 0 and 1023 inclusive: -16.1606
+Generated projection for plane 316
+Plane 317 failed: Coordinate must be between 0 and 1023 inclusive: -24.182
+Generated projection for plane 318
+Generated projection for plane 319
+Generated projection for plane 320
+Plane 321 failed: Coordinate must be between 0 and 1023 inclusive: -15.2098
+Generated projection for plane 322
+Generated projection for plane 323
+Generated projection for plane 324
+Processed 325 planes | 319.2 planes/sec
+Generated projection for plane 325
+Generated projection for plane 326
+Generated projection for plane 327
+Plane 328 failed: Triangle is not isosceles. Side lengths: AB=32.847564, BC=87.097093, CA=119.944657. Allowed difference: 0.001.
+Generated projection for plane 329
+Generated projection for plane 330
+Generated projection for plane 331
+Generated projection for plane 332
+Generated projection for plane 333
+Generated projection for plane 334
+Generated projection for plane 335
+Generated projection for plane 336
+Generated projection for plane 337
+Generated projection for plane 338
+Generated projection for plane 339
+Plane 340 failed: Coordinate must be between 0 and 1023 inclusive: -23.5632
+Plane 341 failed: Coordinate must be between 0 and 1023 inclusive: -30.6824
+Generated projection for plane 342
+Generated projection for plane 343
+Plane 344 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=80.000026, BC=50.990220, CD=53.851682, DA=72.801139. Allowed difference: 0.001.
+Generated projection for plane 345
+Plane 346 failed: Coordinate must be between 0 and 1023 inclusive: -14.3874
+Generated projection for plane 347
+Generated projection for plane 348
+Plane 349 failed: Coordinate must be between 0 and 1023 inclusive: -16.4967
+Processed 350 planes | 331.8 planes/sec
+Generated projection for plane 350
+Plane 351 failed: Triangle is not isosceles. Side lengths: AB=67.139942, BC=122.894447, CA=105.432337. Allowed difference: 0.001.
+Generated projection for plane 352
+Generated projection for plane 353
+Generated projection for plane 354
+Generated projection for plane 355
+Generated projection for plane 356
+Plane 357 failed: Coordinate must be between 0 and 1023 inclusive: -97.8973
+Generated projection for plane 358
+Plane 359 failed: Coordinate must be between 0 and 1023 inclusive: -117.0543
+Generated projection for plane 360
+Plane 361 failed: Coordinate must be between 0 and 1023 inclusive: -6.3469
+Generated projection for plane 362
+Plane 363 failed: Coordinate must be between 0 and 1023 inclusive: -19.7325
+Generated projection for plane 364
+Generated projection for plane 365
+Generated projection for plane 366
+Generated projection for plane 367
+Generated projection for plane 368
+Generated projection for plane 369
+Generated projection for plane 370
+Plane 371 failed: Coordinate must be between 0 and 1023 inclusive: -77.1043
+Plane 372 failed: Coordinate must be between 0 and 1023 inclusive: -1.8062
+Generated projection for plane 373
+Generated projection for plane 374
+Processed 375 planes | 343.3 planes/sec
+Plane 375 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=101.824993, BC=43.888992, CD=50.000053, DA=58.999987. Allowed difference: 0.001.
+Generated projection for plane 376
+Plane 377 failed: Coordinate must be between 0 and 1023 inclusive: -69.2876
+Generated projection for plane 378
+Generated projection for plane 379
+Generated projection for plane 380
+Generated projection for plane 381
+Plane 382 failed: Coordinate must be between 0 and 1023 inclusive: -4.4215
+Plane 383 failed: Coordinate must be between 0 and 1023 inclusive: -116.6132
+Generated projection for plane 384
+Generated projection for plane 385
+Generated projection for plane 386
+Plane 387 failed: Quadrilateral is not an isosceles trapezoid. Side lengths: AB=101.367837, BC=70.061314, CD=50.000005, DA=80.309594. Allowed difference: 0.001.
+Generated projection for plane 388
+Generated projection for plane 389
+Plane 390 failed: Triangle is not isosceles. Side lengths: AB=84.567311, BC=137.560599, CA=103.307513. Allowed difference: 0.001.
+Generated projection for plane 391
+Generated projection for plane 392
+Generated projection for plane 393
+Generated projection for plane 394
+Generated projection for plane 395
+Generated projection for plane 396
+Plane 397 failed: Coordinate must be between 0 and 1023 inclusive: -1.631
+Generated projection for plane 398
+Generated projection for plane 399
+Processed 400 planes | 353.2 planes/sec
+Finished: 400 planes, 270 successful, 130 failed in 1.13 seconds (353.2 planes/sec)
+Creating video from 400 frames...
+Input #0, image2, from '/home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/projection_frames/projection_%d.png':
+  Duration: 00:00:08.00, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, gray(pc, gbr/unknown/unknown), 80x78, 50 fps, 50 tbr, 50 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> mpeg4 (native))
+Press [q] to stop, [?] for help
+Output #0, mp4, to '/home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/experiment_output.mp4':
+  Metadata:
+    encoder         : Lavf62.12.103
+  Stream #0:0: Video: mpeg4 (mp4v / 0x7634706D), yuv420p(tv, progressive), 512x512 [SAR 1:1 DAR 1:1], q=2-31, 200 kb/s, 50 fps, 12800 tbn
+    Metadata:
+      encoder         : Lavc62.28.103 mpeg4
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 72x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 59x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 62x70, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x78, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 88x90, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 62x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 68x54, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 90x95, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 74x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 42x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x99, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 104x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 71x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 77x67, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 70x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 77x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 72x59, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 43x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 63x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 53x66, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 60x100, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 109x73, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x81, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 102x50, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 47x45, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 98x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 76x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 48x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 43x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 63x65, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 98x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 104x45, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 78x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 99x54, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x46, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 63x71, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 103x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 66x88, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 54x83, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 108x45, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 70x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x87, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 98x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x98, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 97x84, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 97x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x88, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x87, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 67x45, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 92x94, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 98x50, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 71x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 65x99, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 109x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 71x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 68x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 88x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 100x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 55x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 99x93, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 57x85, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x59, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 93x94, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 94x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 70x89, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 57x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 55x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x82, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 51x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 77x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x50, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 74x90, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 107x89, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 61x93, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 96x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 87x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 100x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 97x67, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 104x82, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 70x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 50x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x53, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 84x59, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x79, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 63x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 78x87, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 99x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 96x73, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x59, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 68x81, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 93x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x98, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 65x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 55x100, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 78x65, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 77x47, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x52, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 67x46, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 94x70, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 46x45, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 93x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 58x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 58x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 89x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 55x66, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 90x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 103x80, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x68, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x79, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 72x60, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x48, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 103x83, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 68x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 105x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 102x46, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x73, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 107x52, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 93x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 106x60, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 98x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 48x92, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x83, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 51x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 54x65, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x66, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 99x54, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 89x101, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 65x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 78x53, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 84x73, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x73, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x61, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 92x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 96x61, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 65x93, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x65, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 88x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 109x78, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 89x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 106x88, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x80, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 104x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 46x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x92, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 97x70, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 107x90, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 56x66, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x91, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 78x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 74x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 110x57, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x66, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 99x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 97x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 105x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 108x91, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 64x89, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x53, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 89x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 84x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 56x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 92x52, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 90x93, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 102x87, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x71, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x54, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 67x72, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 63x56, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 103x82, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 74x58, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 71x97, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 85x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 105x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x60, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 62x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 53x95, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 51x70, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 67x96, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 55x77, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 61x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 49x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x87, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 111x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 54x101, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 82x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 70x64, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x92, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 77x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 54x93, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x100, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x54, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 86x70, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 62x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 87x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 100x97, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 85x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x65, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x50, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 64x69, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 58x52, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 56x82, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 72x63, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 51x100, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 59x48, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x55, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 57x88, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x79, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x81, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 64x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 90x81, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 67x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 91x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x88, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 58x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 75x43, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 93x57, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x42, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 80x44, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 69x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 73x51, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 60x49, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 81x74, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 83x91, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 101x59, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 104x75, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 100x76, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 44x86, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 46x57, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 512x512, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 79x62, unspecified alph
+[vf#0:0 @ 0x55748a0376c0] Reconfiguring filter graph because video parameters changed to gray(pc, gbr), 95x56, unspecified alph
+[mp4 @ 0x55748a026ec0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x55748a035a80] video:4719KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.055318%
+frame=  400 fps=105 q=3.0 Lsize=    4721KiB time=00:00:08.00 bitrate=4834.8kbits/s speed=2.11x elapsed=0:00:03.79
+MP4 created successfully: /home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/experiment_output.mp4
+Frames: 400
+Duration: 8.0 seconds
+Video created successfully: /home/boazcg/IdeaProjects/I2SE_Ex1/Experiment/experiment_output.mp4
