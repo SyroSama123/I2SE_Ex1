@@ -1,5 +1,18 @@
 # I2SE_Ex1 — 3D Volume Plane Projection
 
+# Table Of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [Input Format](#input-format)
+5. [Geometric Constraints](#geometric-constraints)
+6. [Output](#output)
+7. [Project Structure](#project-structure)
+8. [Running the Application](#running-the-application)
+9. [Error Handling](#error-handling)
+10. [Performance Considerations](#performance-considerations)
+11. [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 I2SE_Ex1 is a Java application developed for the Introduction to Software Engineering (OOP/OOD) assignment.
@@ -102,7 +115,8 @@ The CSV parser also supports:
 - Comment lines beginning with `#`, which are ignored.
 - Optional empty fourth-vertex fields in a 12-field row, allowing a triangle to be represented using 12 fields.
 
-## Coordinate Constraints
+
+### Coordinate Constraints
 
 Each coordinate must satisfy:
 
@@ -149,100 +163,6 @@ A -> B -> C -> D
 ```
 
 The permitted geometric tolerance for coplanarity, parallelism, and equal side lengths is `0.001`.
-
-## Projection Algorithm
-
-The projection process consists of several stages.
-
-### 1. Geometry Validation
-
-The application validates the supplied vertices and verifies that they define a supported geometric shape.
-
-Invalid geometry causes the current plane to fail, but does not interrupt the processing of subsequent planes.
-
-### 2. Base Identification
-
-For an isosceles triangle, the algorithm identifies the equal sides and selects the remaining side as the base.
-
-For an isosceles trapezoid, it identifies the parallel sides and selects the longer one as the base.
-
-If both parallel sides have equal lengths, the first identified base is selected.
-
-### 3. Local Coordinate System
-
-A local two-dimensional coordinate system is constructed for the plane:
-
-- The horizontal axis follows the selected base.
-- The vertical axis is perpendicular to the horizontal axis within the plane.
-- The vertical direction is chosen so that the apex or opposite base lies above the selected base.
-
-This ensures consistent projection orientation regardless of the original 3D orientation.
-
-### 4. 2D Projection Coordinates
-
-Each 3D vertex is transformed into the local coordinate system using dot products with the local basis vectors.
-
-The resulting coordinates are translated so that the minimum X and maximum Y values define the image boundaries.
-
-The pixel spacing is one unit.
-
-The resulting image dimensions are calculated as:
-
-```text
-width  = ceil(maxX - minX) + 1
-height = ceil(maxY - minY) + 1
-```
-
-Both dimensions are guaranteed to be at least one pixel.
-
-### 5. Triangle Rasterization
-
-The projected shape is rasterized using barycentric coordinates.
-
-For each pixel inside a projected triangle, barycentric weights are calculated and used to interpolate the corresponding 3D coordinates.
-
-The interpolated coordinates are rounded to the nearest voxel:
-
-```text
-voxelX = round(x)
-voxelY = round(y)
-voxelZ = round(z)
-```
-
-If the resulting voxel lies inside the volume, its value is retrieved and assigned to the corresponding output pixel.
-
-A mask is maintained to distinguish valid projected pixels from pixels outside the volume or outside the projected shape.
-
-### 6. Quadrilateral Handling
-
-Quadrilaterals are divided into two triangles:
-
-```text
-Triangle 1: A, B, C
-Triangle 2: A, C, D
-```
-
-Both triangles are rasterized using the same barycentric interpolation procedure.
-
-### 7. Grayscale Normalization
-
-Each projection is independently normalized into an 8-bit grayscale image.
-
-The minimum and maximum valid voxel values are determined, and each pixel is mapped to the range:
-
-```text
-0 - 255
-```
-
-The normalization formula is:
-
-```text
-gray = 255 * (value - min) / (max - min)
-```
-
-Invalid pixels are assigned a grayscale value of zero.
-
-If all valid pixel values are identical, the output remains black because normalization is not performed.
 
 ## Output
 
@@ -493,9 +413,3 @@ Ensure that:
 - At least one projection frame was generated.
 - The generated frames are consecutively numbered, starting from `projection_0.png`.
 - The output directory is writable.
-
-## Assignment Context
-
-This project was developed for the course **Introduction to Software Engineering (OOP/OOD)**.
-
-The assignment focuses on implementing a plane-projection algorithm for a three-dimensional volume while emphasizing software architecture, robustness, algorithmic correctness, runtime efficiency, input validation, and overall code quality.
