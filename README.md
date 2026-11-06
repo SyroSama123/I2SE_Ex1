@@ -6,12 +6,13 @@
 3. [Requirements](#requirements)
 4. [Input Format](#input-format)
 5. [Geometric Constraints](#geometric-constraints)
-6. [Output](#output)
-7. [Project Structure](#project-structure)
-8. [Running the Application](#running-the-application)
-9. [Error Handling](#error-handling)
-10. [Performance Considerations](#performance-considerations)
-11. [Troubleshooting](#troubleshooting)
+6. [Projection Algorithm](#projection-algorithm)
+7. [Output](#output)
+8. [Project Structure](#project-structure)
+9. [Running the Application](#running-the-application)
+10. [Error Handling](#error-handling)
+11. [Performance Considerations](#performance-considerations)
+12. [Troubleshooting](#troubleshooting)
 
 ## Overview
 
@@ -163,6 +164,10 @@ A -> B -> C -> D
 ```
 
 The permitted geometric tolerance for coplanarity, parallelism, and equal side lengths is `0.001`.
+
+## Projection Algorithm
+
+The projection algorithm is described in detail in the "Algorithm_Definition.md" file.
 
 ## Output
 
